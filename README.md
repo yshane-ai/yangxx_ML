@@ -1,5 +1,3 @@
-# yangxx_ML
-
 This is yangxx's repo for machine learning.
 
 ## RL
