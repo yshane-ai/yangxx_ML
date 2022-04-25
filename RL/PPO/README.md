@@ -17,7 +17,10 @@ $$
 
 PPO的思想就是用另外一个actor$\theta^\prime$去跟环境互动（采样），然后将收集到的数据去更新$\theta$，将数据重复使用多次后再将$\theta^\prime$和$\theta$同步。
 
-PPO: $$L(\theta) = E[\min(\frac{\pi_{\theta_k} (a_t| s_t)}{\pi_{\theta} (a_t | s_t)} A(s_t, a_t), clip (\frac{\pi_{\theta_k}(a_t| s_t)}{\pi_{\theta} (a_t|s_t)}, 1-\epsilon, 1+\epsilon)A(s_t, a_t))]$$
+PPO: 
+$$
+L(\theta) = E[\min(\frac{\pi_{\theta_k} (a_t| s_t)}{\pi_{\theta} (a_t | s_t)} A(s_t, a_t), clip (\frac{\pi_{\theta_k}(a_t| s_t)}{\pi_{\theta} (a_t|s_t)}, 1-\epsilon, 1+\epsilon)A(s_t, a_t))]
+$$
 
 然后PPO利用了重要性采样来保证样本的策略分布和当前策略的的策略分布保持一致，此外利用clip方法保证策略更新的幅度不要过大。
 
