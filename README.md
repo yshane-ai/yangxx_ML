@@ -17,7 +17,8 @@ RL部分整理了RL相关的书籍和课程资源，包括UCB，CMU，Stanford�
 ## Basic
 
 - Transformer：使用pytorch实现一个简易版本的transformer。
-- GCN：使用pytorch实现的简易图卷积神经网络。
+- GCN：使用pytorch实现一个简易版本的图卷积神经网络。
+- Pointer Network:使用pytorch实现一个简易版本的pointer network。
 
 ## ML
 
